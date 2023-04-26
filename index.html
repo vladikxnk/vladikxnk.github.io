@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header__menu">
+        <ul>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Podcasts</a></li>
+        </ul>
+      </div>
+      <div class="header__search">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="header__user">
+        <select onchange="changeLanguage(this)">
+          <option value="en">English</option>
+          <option value="uk" selected>Ukrainian</option>
+          <option value="ru">Russian</option>
+        </select>
+        <button id="signin">Sign In</button>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">All photos</a></li>
+            <li><a href="#">Selfies</a></li>
+            <li><a href="#">Recent</a></li>
+            <li><a href="#">Deleted</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section>
+        <h1>All photos</h1>
+        <div id="gallery">
+          <div id="gallery">
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=1" alt="Photo 1">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=2" alt="Photo 2">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=3" alt="Photo 3">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=4" alt="Photo 4">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=5" alt="Photo 5">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=6" alt="Photo 6">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=7" alt="Photo 7">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=8" alt="Photo 8">
+            </div>
+            <div class="gallery__item">
+              <img src="https://picsum.photos/300/200?random=9" alt="Photo 9">
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div>
+          <ul class="sort-options">
+            <li>
+              <label>
+                <input type="radio" name="sort" value="newest">
+                <span>Newest</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="sort" value="latest">
+                <span>Latest</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
